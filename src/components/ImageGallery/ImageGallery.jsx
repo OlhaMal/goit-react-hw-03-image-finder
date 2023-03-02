@@ -7,6 +7,17 @@ import { Button } from 'components/Button/Button';
 import { Modal } from 'components/Modal/Modal';
 import PropTypes from 'prop-types';
 
+export class ImageGallery extends Component {
+    state = {
+        images: [],
+        status: 'idle',
+        pageNumber: 1,
+        loadMore: null,
+        showModal: false,
+        largeImageUrl: '',
+    }
+}
+
 // export class ImageGallery extends Component {
 //   // В state зберігається пустий масив images, в який буде записуватись відповідь від api,
 //   // в status - статус, від якого залежить що буде рендеритись на сторінку,
