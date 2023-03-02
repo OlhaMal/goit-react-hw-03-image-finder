@@ -8,14 +8,14 @@ import { Modal } from 'components/Modal/Modal';
 import PropTypes from 'prop-types';
 
 export class ImageGallery extends Component {
-    state = {
-        images: [],
-        status: 'idle',
-        pageNumber: 1,
-        loadMore: null,
-        showModal: false,
-        largeImageUrl: '',
-    }
+    // state = {
+    //     images: [],
+    //     status: 'idle',
+    //     pageNumber: 1,
+    //     loadMore: null,
+    //     showModal: false,
+    //     largeImageUrl: '',
+    // }
 }
 
 // export class ImageGallery extends Component {
