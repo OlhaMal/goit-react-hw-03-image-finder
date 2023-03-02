@@ -31,7 +31,7 @@ export class Modal extends Component {
     return createPortal(
       <div className={css.modalBackdrop} onClick={this.handleBackdropClick}>
         <div className={css.modalContainer}>
-          <img src={imgUrl} alt="large picture" />
+          <img src={imgUrl} alt="" />
         </div>
       </div>,
       modalRoot
