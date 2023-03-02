@@ -23,7 +23,7 @@ export class App extends Component {
         }}
       >
         <Searchbar onSubmitInput={this.handleFormSubmit} />
-        {/* <ImageGallery inputValue={this.state.inputValue} /> */}
+        <ImageGallery inputValue={this.state.inputValue} />
         <ToastContainer
           position="top-right"
           autoClose={2000}
