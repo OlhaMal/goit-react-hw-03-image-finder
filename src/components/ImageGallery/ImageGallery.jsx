@@ -16,6 +16,9 @@ export class ImageGallery extends Component {
     //     showModal: false,
     //     largeImageUrl: '',
     // }
+    render() {
+        
+    }
 }
 
 // export class ImageGallery extends Component {
