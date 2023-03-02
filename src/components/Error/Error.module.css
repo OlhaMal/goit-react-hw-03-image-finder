@@ -1,0 +1,12 @@
+.alert {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 45px;
+  }
+  
+  .alertMessage {
+    font-size: xx-large;
+    text-align: center;
+    line-height: 150%;
+  }
