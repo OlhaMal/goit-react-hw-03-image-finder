@@ -17,9 +17,10 @@ export class ImageGallery extends Component {
     //     largeImageUrl: '',
     }
     render() {
-        if (this.state.status === 'idle') {
-                  return '';
-                }
+        const { status } = this.state;
+        if (status === 'idle') {
+            return <div>Введите имя покемона.</div>;
+          }
     }
 }
 
