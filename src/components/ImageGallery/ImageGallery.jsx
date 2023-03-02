@@ -1,11 +1,11 @@
-// import { Component } from 'react';
-// import { fetchImages } from 'services/fetchImages';
-// // import { ImageGalleryItem } from 'components/ImageGalleryItem/ImageGalleryItem';
-// // import { Error } from 'components/Error/Error';
-// // import { Loader } from 'components/Loader/Loader';
-// // import { Button } from 'components/Button/Button';
-// // import { Modal } from 'components/Modal/Modal';
-// // import PropTypes from 'prop-types';
+import { Component } from 'react';
+import { fetchImages } from 'services/fetchImages';
+import { ImageGalleryItem } from 'components/ImageGalleryItem/ImageGalleryItem';
+import { Error } from 'components/Error/Error';
+import { Loader } from 'components/Loader/Loader';
+import { Button } from 'components/Button/Button';
+import { Modal } from 'components/Modal/Modal';
+import PropTypes from 'prop-types';
 
 // export class ImageGallery extends Component {
 //   // В state зберігається пустий масив images, в який буде записуватись відповідь від api,
