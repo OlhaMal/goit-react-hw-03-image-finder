@@ -15,6 +15,7 @@ export class ImageGallery extends Component {
     loadMore: null,
     showModal: false,
     largeImageUrl: '',
+    tags: '',
   };
 
   handleLoadMore = () => {
@@ -43,8 +44,8 @@ export class ImageGallery extends Component {
     }
   }
 
-  getLargeUrl = imageUrl => {
-    this.setState({ largeImageUrl: imageUrl });
+  getLargeUrl = (imageUrl, tagNames) => {
+    this.setState({ largeImageUrl: imageUrl, tags: tagNames });
     this.toggleModal();
   };
 
@@ -55,7 +56,7 @@ export class ImageGallery extends Component {
   };
 
   render() {
-    const { images, status, loadMore, largeImageUrl, showModal } = this.state;
+    const { images, status, loadMore, largeImageUrl, showModal, tags } = this.state;
     const { inputValue } = this.props;
 
     if (status === 'resolved') {
@@ -63,7 +64,7 @@ export class ImageGallery extends Component {
           <ImageGalleryItem images={images} loadLargeUrl={this.getLargeUrl}>
             {loadMore === 0 && <Button onLoadMore={this.handleLoadMore} />}
             {showModal && (
-              <Modal onClose={this.toggleModal} imgUrl={largeImageUrl} />
+              <Modal onClose={this.toggleModal} imgUrl={largeImageUrl} tags={tags}/>
             )}
           </ImageGalleryItem>
         );

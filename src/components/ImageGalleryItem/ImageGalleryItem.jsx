@@ -11,7 +11,7 @@ export const ImageGalleryItem = ({ images, children, loadLargeUrl }) => (
             alt={tags}
             className={css.galleryImg}
             onClick={() => {
-              loadLargeUrl(largeImageURL);
+              loadLargeUrl(largeImageURL, tags);
             }}
           />
         </li>

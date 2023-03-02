@@ -27,11 +27,11 @@ export class Modal extends Component {
   };
 
   render() {
-    const { imgUrl } = this.props;
+    const { imgUrl, tags } = this.props;
     return createPortal(
       <div className={css.modalBackdrop} onClick={this.handleBackdropClick}>
         <div className={css.modalContainer}>
-          <img src={imgUrl} alt="" />
+          <img src={imgUrl} alt={tags} />
         </div>
       </div>,
       modalRoot
@@ -42,4 +42,5 @@ export class Modal extends Component {
 Modal.propTypes = {
   onClose: PropTypes.func.isRequired,
   imgUrl: PropTypes.string.isRequired,
+  tags: PropTypes.string.isRequired,
 };
