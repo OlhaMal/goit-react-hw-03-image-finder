@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { fetchImages } from 'components/api/fetchImages';
+import { fetchImages } from 'services/fetchImages';
 // import { ImageGalleryItem } from 'components/ImageGalleryItem/ImageGalleryItem';
 // import { Error } from 'components/Error/Error';
 // import { Loader } from 'components/Loader/Loader';
